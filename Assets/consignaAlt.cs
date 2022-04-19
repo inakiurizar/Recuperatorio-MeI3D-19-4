@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class consignaAlt : MonoBehaviour
 {
+    public int edad;
     public float altura;
-        public float edad;
-    
+
     void Start()
     {
         if (edad < 1)
@@ -16,13 +16,10 @@ public class NewBehaviourScript : MonoBehaviour
         else if (altura < 0)
         {
             Debug.Log("Error");
-        } else
+        }
+        else
         {
-            if (altura > 1.2)
-            {
-                Debug.Log("Podes entrar");
-            }
-            else if (edad > 13)
+            if (altura > 1.2 || edad > 13)
             {
                 Debug.Log("Podes entrar");
             }
@@ -31,13 +28,11 @@ public class NewBehaviourScript : MonoBehaviour
                 Debug.Log("No podes entrar");
             }
         }
-         
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
